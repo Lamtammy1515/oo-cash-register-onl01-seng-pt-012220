@@ -9,7 +9,7 @@ class CashRegister
   end 
 
   
-  def add_item(item, price, quantity = 1)
+  def add_item(name, price, quantity=1)
    self.transaction = [name, price, quantity]
    quantity.times do 
      self.purchases.push self.transaction[0]
