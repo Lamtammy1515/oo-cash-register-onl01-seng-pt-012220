@@ -7,10 +7,7 @@ class CashRegister
     self.total = 0
     self.discount = discount if discount != 0
   end 
-  
-  def total
-    self.total
-  end 
+
   
   def add_item(item, price, quantity = 1)
    @transaction = [name, price, quantity]
@@ -30,7 +27,7 @@ class CashRegister
     return phrase
   end
   
-  def item
+  def items
   return self.purchases
   end 
   
