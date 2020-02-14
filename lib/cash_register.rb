@@ -40,4 +40,5 @@ class CashRegister
       self.purchases.pop
       self.total -= self.transaction[1]
     end 
+  end 
 end 
