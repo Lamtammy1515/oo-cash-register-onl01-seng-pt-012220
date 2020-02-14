@@ -5,7 +5,7 @@ class CashRegister
   def initialize(discount = 0)
     self.purchases = []
     self.total = 0
-    self.discount = discount
+    self.discount = discount if discount != 0
   end 
   
   def total
