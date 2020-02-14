@@ -10,7 +10,7 @@ class CashRegister
 
   
   def add_item(item, price, quantity = 1)
-   @transaction = [name, price, quantity]
+   self.transaction = [name, price, quantity]
    quantity.times do 
      self.purchases.push self.transaction[0]
      self.total += self.transaction[1]
