@@ -25,8 +25,9 @@ class CashRegister
       self.total = self.total - self.total*self.discount/100 
       return "After the discount, the total comes to $#{self.total}."
     else 
-      return "There is no discount to apply."
+      phrase =  "There is no discount to apply."
     end 
+    return phrase
   end
   
   def item
